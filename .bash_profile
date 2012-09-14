@@ -1,9 +1,10 @@
 cd Documents/workspace
 
 BOLD=`tput bold`
+NOBOLD=`tput rmso`
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (git branch\: \1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 }
 
 
@@ -16,7 +17,7 @@ BLACK="\[\033[38m\]"
 CYAN='\[\033[0;36m\]'
 PURPLE='\[\033[0;35m\]'
 
-export PS1="$BLUE$BOLD\$(date +%I:%M:%S%p) $GREEN$BOLD\w$RED$BOLD\$(parse_git_branch)$GREY: "
+export PS1="$BLUE\$(date +%I:%M:%S%p) $GREEN$BOLD\w$PURPLE\$(parse_git_branch)$GREY: "
 
 alias l='ls -lah'
 alias g='git'
