@@ -1,0 +1,16 @@
+[alias]
+	l = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative --oneline --decorate
+	st = status
+	co = checkout
+	c = commit
+	b = branch
+	p = push
+[color]
+	ui = auto
+[core]
+	editor = nano -Y patch
+[user]
+	name = John Postlethwait
+	email = john.postlethwait@nebula.com
+[gitreview]
+	username = john-postlethwait
