@@ -13,7 +13,7 @@ CYAN='\[\033[0;36m\]'
 GREY="\[\033[37m\]"
 BLACK="\[\033[38m\]"
 
-export PS1="$BLUE\$(date +%I:%M:%S%p) $RED\w$YELLOW\$(parse_git_branch)$GREY: "
+export PS1="$BLUE\$(date +%I:%M:%S%p) $PINK(\h) $RED\w$YELLOW\$(parse_git_branch)$GREY\n» "
 
 alias l='ls -lah'
 alias g='git'
