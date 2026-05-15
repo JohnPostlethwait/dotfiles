@@ -9,8 +9,3 @@
 	ui = auto
 [core]
 	editor = nano -Y patch
-[user]
-	name = John Postlethwait
-	email = john.postlethwait@nebula.com
-[gitreview]
-	username = john-postlethwait
