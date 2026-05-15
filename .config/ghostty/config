@@ -1,0 +1,12 @@
+clipboard-trim-trailing-spaces = true
+copy-on-select = true
+font-size = 14
+font-family = JetBrainsMono Nerd Font Mono
+window-save-state = always
+unfocused-split-opacity = 0.25
+unfocused-split-fill = #1c1c1c
+split-divider-color = #c4a1e0
+theme = Atom
+auto-update = check
+window-padding-y = 20
+window-padding-x = 20
