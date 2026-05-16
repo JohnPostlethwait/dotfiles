@@ -22,6 +22,8 @@ $character"""
 
 add_newline = true
 palette = "tokyo_night"
+scan_timeout = 1000
+command_timeout = 1000
 
 [palettes.tokyo_night]
 bg          = "#1a1b26"
@@ -110,7 +112,7 @@ disabled = true
 command = "$HOME/.bin/np-cache.sh"
 when = "true"
 shell = ["bash", "--noprofile", "--norc"]
-style = "purple"
+style = "#e89bc9"
 format = "[$output]($style)  "
 description = "Cached macOS now-playing (Roon/Spotify/Apple Music)"
 
