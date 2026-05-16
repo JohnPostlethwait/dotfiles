@@ -9,3 +9,5 @@
 	ui = auto
 [core]
 	editor = nano -Y patch
+[user]
+	email = johnpostlethwait@fastmail.com
