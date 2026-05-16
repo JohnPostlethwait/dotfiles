@@ -2,6 +2,8 @@
 
 My macOS shell setup. Single source of truth for `zsh`, [Starship](https://starship.rs), [Ghostty](https://ghostty.org), and a handful of small `~/.bin` helpers.
 
+<img width="579" height="73" alt="Screenshot 2026-05-15 at 9 53 15 PM" src="https://github.com/user-attachments/assets/f31c14bb-b2e2-485f-8fb9-45e3b297782e" />
+
 ## Install
 
 ```sh
