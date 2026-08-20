@@ -11,3 +11,5 @@
 	editor = nano -Y patch
 [user]
 	email = johnpostlethwait@fastmail.com
+[init]
+	defaultBranch = main

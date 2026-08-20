@@ -2,8 +2,9 @@
 
 export PATH="$HOME/go/bin:$PATH"
 
-# Turn off annoying Docker ads
+# Turn off annoying Docker and Homebrew ads
 export DOCKER_CLI_HINTS=false
+export HOMEBREW_NO_ENV_HINTS=1
 
 # Source modular configuration.
 source "$HOME/.config/zsh/env.zsh"
@@ -34,8 +35,15 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 setopt APPEND_HISTORY
-setopt SHARE_HISTORY
+unsetopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 export PATH="$HOME/.local/bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Claude Multi-Account
+
+alias claude1="CLAUDE_CONFIG_DIR=~/.claude-ellmtree claude"
+alias claude2="CLAUDE_CONFIG_DIR=~/.claude claude"
+

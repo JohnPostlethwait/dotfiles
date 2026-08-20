@@ -8,5 +8,6 @@ unfocused-split-fill = #1c1c1c
 split-divider-color = #c4a1e0
 theme = Atom
 auto-update = check
+shell-integration-features = ssh-env,ssh-terminfo
 window-padding-y = 20
 window-padding-x = 20
